@@ -1,11 +1,11 @@
 # README
 ## Prérequis
-* ruby : 3.0.3
+* ruby : 3.1.2
 ## Installation
 Installation des dépendances :
 ```bash
 bundle install
-rails db:migrate db:seed
+rails db:create db:migrate db:seed
 ```
 Lancer le serveur :
 ```
