@@ -3,14 +3,25 @@ class UsersController < ApplicationController
 
   # GET /users
   def index
-    @users = User.all
+
+    @users = User.all.map do |u|
+      if u.avatar.attached?
+        u.attributes.merge(avatar_url: url_for(u.avatar))
+      else
+        u
+      end
+    end
 
     render json: @users
   end
 
   # GET /users/1
   def show
-    render json: @user
+    if @user.avatar.attached?
+      render json: @user.attributes.merge(avatar_urL: url_for(@user.avatar))
+    else
+      render json: @user
+    end
   end
 
   # POST /users
@@ -46,6 +57,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:firstname, :lastname, :username)
+      params.permit(:firstname, :lastname, :username, :avatar)
     end
 end
