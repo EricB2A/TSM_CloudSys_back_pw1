@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
     @users = User.all.map do |u|
       if u.avatar.attached?
-        u.attributes.merge(avatar_url: url_for(u.avatar))
+        u.attributes.merge(avatar: url_for(u.avatar))
       else
         u
       end
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   # GET /users/1
   def show
     if @user.avatar.attached?
-      render json: @user.attributes.merge(avatar_urL: url_for(@user.avatar))
+      render json: @user.attributes.merge(avatar: url_for(@user.avatar))
     else
       render json: @user
     end
