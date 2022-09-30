@@ -39,6 +39,9 @@ gem "rack-cors"
 # aws s3
 gem "aws-sdk-s3", require: false
 
+# AzureStorage
+gem "azure-storage-blob", "~> 2.0", require: false
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

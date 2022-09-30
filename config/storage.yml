@@ -31,11 +31,11 @@ exoscale:
 #   bucket: your_own_bucket-<%= Rails.env %>
 
 # Use bin/rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
-# microsoft:
-#   service: AzureStorage
-#   storage_account_name: your_account_name
-#   storage_access_key: <%= Rails.application.credentials.dig(:azure_storage, :storage_access_key) %>
-#   container: your_container_name-<%= Rails.env %>
+microsoft:
+  service: AzureStorage
+  storage_account_name: azures3cloud
+  storage_access_key: isWIUBR/Q0hLOnMH/NWbfTVoTIMvunC1+dtm/l0fcY5oGgpyH84WvJd5GodKQcugttKZVtLGBEuF+AStRgxAkA==
+  container: cloud
 
 # mirror:
 #   service: Mirror

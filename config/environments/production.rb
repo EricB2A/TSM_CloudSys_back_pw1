@@ -33,7 +33,7 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   # TODO: MODIFIER VOTRE STORAGE ICI
   # VOIR : https://edgeapi.rubyonrails.org/classes/ActiveStorage/Service.html
-  config.active_storage.service = :exoscale
+  config.active_storage.service = :microsoft
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
