@@ -17,7 +17,7 @@ amazon:
 
 exoscale:
   service: S3
-  endpoint: https://ch-gva-2.exo.io
+  endpoint: https://sos-ch-gva-2.exo.io
   region: ch-gva-2
   access_key_id: EXO2b25fe435a990a0ec6df8fbd
   secret_access_key: sOjkB-vahx9mZXfo_vOkfi1LO8hA1akeu4hN0MyEYQc
