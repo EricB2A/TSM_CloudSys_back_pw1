@@ -9,8 +9,8 @@ local:
 # Use bin/rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 amazon:
    service: S3
-   access_key_id: AKIA3FUTKD6P7ZMXWZOU
-   secret_access_key: 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
+   access_key_id: 
+   secret_access_key: 
    region: us-east-1
    bucket: cloudsys-group11
    #bucket: cloudsys-group11-<%= Rails.env %>
@@ -19,8 +19,8 @@ exoscale:
   service: S3
   endpoint: https://ch-gva-2.exo.io
   region: ch-gva-2
-  access_key_id: EXO2b25fe435a990a0ec6df8fbd
-  secret_access_key: sOjkB-vahx9mZXfo_vOkfi1LO8hA1akeu4hN0MyEYQc
+  access_key_id: 
+  secret_access_key: 
   bucket: pw1-s3
 
 # Remember not to checkin your GCS keyfile to a repository
@@ -34,7 +34,7 @@ exoscale:
 microsoft:
   service: AzureStorage
   storage_account_name: azures3cloud
-  storage_access_key: isWIUBR/Q0hLOnMH/NWbfTVoTIMvunC1+dtm/l0fcY5oGgpyH84WvJd5GodKQcugttKZVtLGBEuF+AStRgxAkA==
+  storage_access_key: <%= ENV["AZURE_STORAGE_ACCESS_KEY"] %>
   container: cloud
 
 # mirror:
