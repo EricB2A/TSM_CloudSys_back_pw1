@@ -50,4 +50,4 @@ EDITOR="vim" bin/rails credentials:edit
 rails s -e production
 ```
 
-Le serveur tourne sur le port 3000 !
+Le serveur tourne sur le port 3000.
